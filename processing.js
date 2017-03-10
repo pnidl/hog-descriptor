@@ -11,7 +11,7 @@ var processing = {
     for (var y = 0; y < imagedata.height; y++) {
       lumas[y] = new Array(imagedata.width);
 
-      for (var x = 0; x < imagedata.height; x++) {
+      for (var x = 0; x < imagedata.width; x++) {
         var i = x * 4 + y * 4 * imagedata.width;
         var r = imagedata.data[i],
             g = imagedata.data[i + 1],
